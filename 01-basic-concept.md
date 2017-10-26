@@ -48,12 +48,13 @@ Two type categories in javascript:
   ```
  
  # Important facts:
- #### In JavaScript, null and undefined are the only values that methods cannot be invoked on
- #### In JavaScript, strings are immutable
- #### JavaScript variables are untyped: you can assign a value of any type to a variable, and you can later assign a value of a different type to the same variable. Variables are declared with the var keyword
- ### Scope: 
- #### Variables declared out- side of a function are global variables and are visible everywhere in a JavaScript program.    
- #### Variables declared inside a function have function scope and are visible only to code that appears inside that function
+ * In JavaScript, null and undefined are the only values that methods cannot be invoked on
+ * In JavaScript, strings are immutable
+ * JavaScript variables are untyped: you can assign a value of any type to a variable, and you can later assign a value of a different type to the same variable. Variables are declared with the var keyword
  
- ####  JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as floating-point values. 
+ #### Scope: 
+ * Variables declared out- side of a function are global variables and are visible everywhere in a JavaScript program.    
+ * Variables declared inside a function have function scope and are visible only to code that appears inside that function
+ 
+ * JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as floating-point values. 
  
