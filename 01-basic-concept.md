@@ -73,5 +73,6 @@ function f() {
   console.log(scope);  // will print "undefined" because it is not initialized
   scope = "local";  // now scope is "local"
  }
+ ```
  * Since javascript has a ***function scope***, it's a good practice to define all variables at the top of a function instead of the place they are used. This makes the program much clearer.
  
