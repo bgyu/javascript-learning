@@ -51,10 +51,18 @@ Two type categories in javascript:
  * In JavaScript, null and undefined are the only values that methods cannot be invoked on
  * In JavaScript, strings are immutable
  * JavaScript variables are untyped: you can assign a value of any type to a variable, and you can later assign a value of a different type to the same variable. Variables are declared with the var keyword
+ * JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as floating-point values. 
+ 
  
  #### Scope: 
  * Variables declared out- side of a function are global variables and are visible everywhere in a JavaScript program.    
  * Variables declared inside a function have function scope and are visible only to code that appears inside that function
- 
- * JavaScript does not make a distinction between integer values and floating-point values. All numbers in JavaScript are represented as floating-point values. 
+ * Javascript is using **function scope**, which means variables winthin the function are visible anywhere in the function, not just the block they are defined.
+ ```
+var scope = "global"; function f() {
+  console.log(scope); // Prints "undefined", not "global"
+  var scope = "local"; // Variable initialized here, but defined everywhere console.log(scope); // Prints "local"
+}
+```
+ * Since javascript has a ***function scope***, it's a good practice to define all variables at the top of a function instead of the place they are used. This makes the program much clearer.
  
