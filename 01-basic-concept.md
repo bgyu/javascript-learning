@@ -8,6 +8,10 @@ Two type categories in javascript:
    * null
    * undefined
    
+   Facts:
+   1. Primitives are immutable
+   2. Primitives are compared by **value**
+   
 ## Object types: 
    ### Any Javascript value that is not a number, a string, a boolean, null or undefined (aka. Not primitive types) is an object
       
@@ -17,6 +21,10 @@ Two type categories in javascript:
       * normal object: key-value pairs, unordered collections, like dictinary in Python
       * array: ordered collections, like array in Python
       * function: a special object which has executable code associated with it
+
+  #### Facts:
+  1. Objects are mutable, their values can be changed
+  2. Objects are compared by **reference**, two objects are only the same when they refer to the same underlying object
       
   ### Constructor:
   #### A function that is written to be used to initialize a newly created object via **new** operator
