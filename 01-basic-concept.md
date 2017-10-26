@@ -58,7 +58,7 @@ Two type categories in javascript:
  * Variables declared out- side of a function are global variables and are visible everywhere in a JavaScript program.    
  * Variables declared inside a function have function scope and are visible only to code that appears inside that function
  * Javascript is using **function scope**, which means variables winthin the function are visible anywhere in the function, not just the block they are defined.
- ```
+ ``` javascript
 var scope = "global"; function f() {
   console.log(scope); // Prints "undefined", not "global"
   var scope = "local"; // Variable initialized here, but defined everywhere console.log(scope); // Prints "local"
