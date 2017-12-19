@@ -77,8 +77,11 @@ function f() {
  * Since javascript has a ***function scope***, it's a good practice to define all variables at the top of a function instead of the place they are used. This makes the program much clearer.
  
 ## let, const and var
-### let:  allows you to declare block-level variables. The declared variable is available from the block it is enclosed in.
-### const: allows you to declare variables whose values are never intended to change. The variable is available from the block it is declared in.
-### var: A variable declared with the var keyword is available from the function it is declared in.
+#### let:  allows you to declare block-level variables. The declared variable is available from the block it is enclosed in.
+#### const: allows you to declare variables whose values are never intended to change. The variable is available from the block it is declared in.
+#### var: A variable declared with the var keyword is available from the function it is declared in.
 
+## apply vs call
+#### func.apply(valueOfthis, [arg1, arg2, arg3])   // apply for arrary
+#### func.call(valueOfthis, arg1, arg2, arg3)   // call for comma(',')
  
