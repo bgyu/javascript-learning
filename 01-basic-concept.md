@@ -84,4 +84,14 @@ function f() {
 ## apply vs call
 #### func.apply(valueOfthis, [arg1, arg2, arg3])   // apply for arrary
 #### func.call(valueOfthis, arg1, arg2, arg3)   // call for comma(',')
- 
+``` javascript
+function greetMe(...names) {
+    for (let name of names) {
+        console.log('Hello, ' + name);
+    }
+}
+
+//greetMe.apply(null, ['James', 'Charlie', 'John']);
+//greetMe.call(null, 'James', 'Charlie', 'John', 'Mark');
+greetMe.call(null, ...['James', 'Patric']);
+```
