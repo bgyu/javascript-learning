@@ -25,3 +25,23 @@
  var o2 = Object.create(null);  // inherits no props or methods
  var o3 = Object.create(Object.prototype); // like {} or new Object(), it's an empty object
  ```
+
+### Object and Instances
+``` javascript
+funciton Person(first, last) {
+  this.first = first;
+  this.last = last;
+}
+
+Person.prototype.fullName = function() {
+  return this.first + ' ' + this.last;
+}
+
+p = new Person('Steve', 'Jobs');
+console.log(p.fullName()); // Steve Jobs
+console.log(typeof Person); // function
+console.log(typeof p); // object
+console.log(p instanceof Person); true
+console.log(p.constructor.name); // Person
+console.log(Person.name); // Person
+```
